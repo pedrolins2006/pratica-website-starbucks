@@ -1,6 +1,7 @@
 # Comments
 
     * colocar em prática os conhecimentos em HTML, CSS e JavaScript.
+    * projeto não é responsivo, portanto foi desenvolvido em uma     resoluçaõ de 1920 x 941.
 
 
 # Challenge
