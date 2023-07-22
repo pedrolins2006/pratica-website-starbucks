@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  color: #343334;
+  font-weight: 500;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #fffdff;
+  height: 100vh;
+}
+
+#circle {
+  position: absolute;
+  content: "";
+  /* transition: 0.3 ease-in-out; */
+  width: 100%;
+  height: 100%;
+  background: #036d43;
+  clip-path: circle(50% at 100% 100%);
+  z-index: -1;
+}
+
+header {
+  display: flex;
+  padding: 28px 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  gap: 32px;
+}
+
+main {
+  position: relative;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.text-content {
+  max-width: 50%;
+}
+
+.text-content h2 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+#text-starbucks {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #036d43;
+}
+
+.text-content p {
+  font-size: 1rem;
+  max-width: 700px;
+}
+
+.text-content #btn {
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 40px;
+  background: #036d43;
+  margin-top: 16px;
+  color: #fffdff;
+  text-transform: uppercase;
+}
+
+#img-content {
+  display: flex;
+  padding: 20px 60px;
+  justify-content: center;
+}
+
+#img-content img {
+  transform: translateX(60px);
+  opacity: 0;
+  max-width: 400px;
+}
+
+.show-animation {
+  animation: showCoffe 0.4s ease-in-out forwards;
+}
+
+.sci {
+  position: absolute;
+  right: 0;
+  padding: 32px;
+}
+
+.sci ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.sci img {
+  max-width: 32px;
+  max-height: 32px;
+  filter: invert(1);
+}
+
+footer {
+  padding: 24px 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+footer ul li {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+footer ul li img {
+  max-width: 48px;
+}
+
+footer ul li:hover {
+  transform: translateY(-20px);
+}
+
+@keyframes showCoffe {
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
