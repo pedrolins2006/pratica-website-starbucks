@@ -16,4 +16,4 @@ Projeto desenvolvido pelo canal do Youtube <a href="https://www.youtube.com/@Onl
 
 Imagem utilizada como base do projeto.
 
-![screenshot](/assets/screenshot.png)
+![screenshot](img/screenshot.png)
